@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Персональный сайт Карпенко Дмитрия Сергеевича</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      color: #2d3748;
+      background: #f9fbfd;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #edf2f7;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1a202c;
+      margin-bottom: 8px;
+    }
+
+    .section {
+      margin-bottom: 36px;
+      padding: 16px 0;
+      transition: background 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .section:hover {
+      background-color: #c3d5e6;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #2b6cb0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      font-size: 20px;
+    }
+
+    h2#about::before { content: "👤"; }
+    h2#education::before { content: "🎓"; }
+    h2#interests::before { content: "🔬"; }
+    h2#publications::before { content: "📄"; }
+    h2#works::before { content: "📚"; }
+    h2#projects::before { content: "🚀"; }
+    h2#contacts::before { content: "📧"; }
+
+    p, ul {
+      margin-bottom: 14px;
+      color: #4a5568;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #1a365d;
+      text-decoration: underline;
+    }
+
+    .project-card {
+      background: #f8fafc;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      border-left: 4px solid #4299e1;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 8px rgba(66, 153, 225, 0.15);
+    }
+
+    .project-title {
+      font-weight: 600;
+      color: #1a202c;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #edf2f7;
+      color: #718096;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="photo.jpg" alt="Фото" class="photo">
+      <h1>Карпенко Дмитрий Сергеевич</h1>
+    </header>
+
+    <div class="section">
+      <h2 id="about">Обо мне</h2>
+      <p>Магистрант ФПМИ БГУ, специальность КАД, 1 курс.</p>
+      <p>Студент Школы Анализа Данных Яндекса, 1 курс.</p>
+      <p>Стажер младшего научного сотрудника, Лаборатория анализа биомедицинских изображений, ОИПИ НАН РБ.</p>
+    </div>
+
+    <div class="section">
+      <h2 id="education">Образование</h2>
+      <ul>
+        <li>2020-2024 — бакалавриант ФПМИ БГУ, кафедра ДМА, специальность «Информатика»</li>
+        <li>2024-2027 — Школа Анализа Данных Яндекса, направление «Data Science»</li>
+        <li>2025-2027 — магистратура ФПМИ БГУ, кафедра ММАД, специальность «Прикладная математика и информатика»</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="interests">Научные интересы</h2>
+      <p>Искусственный интеллект, машинное обучение, нейросети, компьютерное зрение, генеративные модели, мультимодальные нейронные сети.</p>
+    </div>
+    <!--
+    TODO: ADD PROJECTS (COMING SOON)))))
+    <div class="section">
+      <h2 id="projects">Проекты</h2>
+      <div class="project-card">
+        <div class="project-title">Название проекта 1</div>
+        <p>...</p>
+        <a href="#">Подробнее →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Название проекта 2</div>
+        <p>...</p>
+        <a href="#">Подробнее →</a>
+      </div>
+    </div>
+    -->
+    <div class="section">
+      <h2 id="publications">Публикации</h2>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=M2oNf9wAAAAJ&hl=ru">Google Scholar</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="works">Работы и рефераты</h2>
+      <ul>
+        <li>Дипломная работа — 2024. <a href="files/diploma.pdf">PDF</a></li>
+        <li>Реферат по основам информационных технологий — 2025. <a href="files/referat_oit.pdf">PDF</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="contacts">Контакты</h2>
+      <p>Email: <a href="mailto:karpenko.dima.s11@gmail.com">karpenko.dima.s11@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/Dimidrol212">@Dimidrol212</a></p>
+    </div>
+
+    <footer>
+      <p>Сайт-визитка • <a href="https://github.com/DmitryKarpenk0" target="_blank">Мой GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
